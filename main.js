@@ -25,7 +25,6 @@ const execPromise = promisify(exec);
 const axios = require('axios');
 const util = require('util');
 const msgpack = require('@msgpack/msgpack');
-const port = process.env.PORT || 10000
     
 global.debug = process.env.NODE_ENV === 'development';
 global.__THETREE__ = {};
@@ -1350,7 +1349,7 @@ app.use((err, req, res, _) => {
     }).then();
 });
 
-const port = process.env.PORT ?? 3000;
+const port = process.env.PORT ?? 10000;
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
