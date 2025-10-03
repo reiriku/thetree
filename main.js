@@ -25,7 +25,8 @@ const execPromise = promisify(exec);
 const axios = require('axios');
 const util = require('util');
 const msgpack = require('@msgpack/msgpack');
-
+const port = process.env.PORT || 10000
+    
 global.debug = process.env.NODE_ENV === 'development';
 global.__THETREE__ = {};
 
