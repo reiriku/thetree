@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "postinstall": "mkdir -p config && cp publicConfig.example.json config/publicConfig.json",
     "start": "npx cross-env NODE_ENV=production node main.js",
     "test": "npx cross-env NODE_ENV=development nodemon main.js",
     "dockertest": "docker compose up --build"
