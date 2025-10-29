@@ -1350,4 +1350,3 @@ app.use((err, req, res, _) => {
 });
 
 module.exports = server;
-});
